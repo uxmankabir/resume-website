@@ -1,0 +1,18 @@
+
+.background-image{
+  background-image: var(--usmankabir-image);
+  height: 100vh;
+  background-size: cover;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 10px;
+  padding: 5vw;
+  color: #05080e;
+  > * {
+      margin: 0;
+  }
+}
