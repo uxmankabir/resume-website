@@ -1,18 +1,38 @@
+section.home{
+  min-height: 100vh;
+  background-color: var(--dark);
+  text-align: center;
+  color: var(--light);
+  padding-block: 15vh;
 
-.background-image{
-  background-image: var(--usmankabir-image);
-  height: 100vh;
-  background-size: cover;
-  background-position: left;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
-  gap: 10px;
-  padding: 5vw;
-  color: #05080e;
-  > * {
-      margin: 0;
+  header{
+    font-family: 'Major Mono Display';
+    font-size: 1.5rem;
+  }
+  
+  .intro{
+    margin-top: 10vh;
+    color: var(--light-50);
+  
+    &__name{
+      font-family: 'Heebo';
+      font-size: 2rem;
+      font-weight: 700;
+      margin-block: 0;
+    }
+
+    &__hello, &__designation{
+      font-size: .75rem;
+    }
+
+    &__image{
+      background-image: image-url('thumbnail.jpg');
+      background-size: cover;
+      border-radius: 50%;
+      width: 14rem;
+      aspect-ratio: 1;
+      margin-inline: auto;
+      margin-block: 3rem;
+    }
   }
 }
