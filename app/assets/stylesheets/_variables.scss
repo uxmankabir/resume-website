@@ -1,6 +1,29 @@
 :root{
-  --dark: #1E2022;
-  --dark-50: #52616B;
-  --light: #F0F5F9;
-  --light-50: #C9D6DF;
+  
+  --color1: #1E2022;
+  --color2: #52616B;
+  --color3: #F0F5F9;
+  --color4: #C9D6DF;
+
+  --background-color1: var(--color3);
+  --background-color2: var(--color2);
+  --background-color3: var(--color1);
+  --background-color4: var(--color3);
+
+  --text-color1: var(--color1);
+  --text-color2: var(--color3);
+  --text-color3: var(--color3);
+  --text-color4: var(--color4);
+
+  @media (prefers-color-scheme: dark){
+    --background-color1: var(--color1);
+    --background-color2: var(--color2);
+    --background-color3: var(--color3);
+    --background-color4: var(--color1);
+
+    --text-color1: var(--color3);
+    --text-color2: var(--color1);
+    --text-color3: var(--color1);
+    --text-color4: var(--color2);
+  }
 }

@@ -1,8 +1,8 @@
 section.home{
   min-height: 100vh;
-  background-color: var(--dark);
+  background-color: var(--background-color1);
   text-align: center;
-  color: var(--light);
+  color: var(--text-color1);
   padding-block: 15vh;
 
   header{
@@ -12,27 +12,28 @@ section.home{
   
   .intro{
     margin-top: 10vh;
-    color: var(--light-50);
+    color: var(--text-color1);
   
-    &__name{
+    &__name h1{
       font-family: 'Heebo';
       font-size: 2rem;
       font-weight: 700;
       margin-block: 0;
     }
 
-    &__hello, &__designation{
+    &__hello, &__designation h2{
       font-size: .75rem;
+      font-weight: normal;
     }
 
     &__image{
-      background-image: image-url('thumbnail.jpg');
-      background-size: cover;
-      border-radius: 50%;
-      width: 14rem;
-      aspect-ratio: 1;
-      margin-inline: auto;
-      margin-block: 3rem;
+      img{
+        object-fit: cover;
+        width: calc(10rem + 5vw);
+        border-radius: 50%;
+        aspect-ratio: 1;
+        margin-block: 5rem;
+      }
     }
   }
 }

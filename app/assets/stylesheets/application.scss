@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;700&family=Major+Mono+Display');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons+Outlined');
 
 *, *::before, *::after{
   box-sizing: border-box;
@@ -14,3 +13,14 @@ body{
 @import "variables";
 @import "nav";
 @import "home";
+
+.visitors_count{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  padding: .5rem 1rem;
+  background-color: var(--background-color4);
+  border: 1px dashed var(--background-color2);
+  border-radius: .25rem;
+  color: var(--text-color4);
+}
