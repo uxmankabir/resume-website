@@ -9,9 +9,9 @@ class ApplicationController < ActionController::Base
   end
 
   def client_ip
-    ip=Socket.ip_address_list.detect{|intf| intf.ipv4_private?}
+    ip = Socket.ip_address_list.detect(&:ipv4_private?).try(:ip_address)
     p '*'*80
-    p "Ip Address: #{ip.ip_address}" if ip
+    p "Ip Address: #{ip}" if ip
     p "Remote IP: #{request.remote_ip}" 
     p '*'*80
     request.remote_ip
