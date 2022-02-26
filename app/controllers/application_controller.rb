@@ -9,7 +9,7 @@ class ApplicationController < ActionController::Base
   end
 
   def client_ip
-    request.ip
+    request.remote_ip
   end
 
 end
