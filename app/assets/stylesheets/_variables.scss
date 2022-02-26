@@ -1,29 +1,23 @@
 :root{
   
-  --color1: #1E2022;
-  --color2: #52616B;
-  --color3: #F0F5F9;
-  --color4: #C9D6DF;
+  --surface1: hsl(0, 0%, 96%);
+  --surface2: hsl(0, 0%, 100%);
+  --surface3: hsla(0, 0%, 78%, 0.3);
+  --surface4: hsla(0, 0%, 0%, 0.2);
+  --surface5: hsl(14, 100%, 70%);
 
-  --background-color1: var(--color3);
-  --background-color2: var(--color2);
-  --background-color3: var(--color1);
-  --background-color4: var(--color3);
+  --color1: hsl(199, 18%, 33%);
 
-  --text-color1: var(--color1);
-  --text-color2: var(--color3);
-  --text-color3: var(--color3);
-  --text-color4: var(--color4);
+  --box-shadow: 0 2px 12px 0 hsla(0, 0%, 0%, 0.1), 0 3px 11px -2px hsla(0, 0%, 0%, 0.1), 0 1px 5px 0 hsla(0, 0%, 0%, 0.1);
 
   @media (prefers-color-scheme: dark){
-    --background-color1: var(--color1);
-    --background-color2: var(--color2);
-    --background-color3: var(--color3);
-    --background-color4: var(--color1);
 
-    --text-color1: var(--color3);
-    --text-color2: var(--color1);
-    --text-color3: var(--color1);
-    --text-color4: var(--color2);
+  --surface1: hsl(200, 19%, 18%);
+  --surface2: hsl(200, 18%, 26%);
+  --surface3: hsla(0, 0%, 20%, 0.3);
+  --surface4: hsla(0, 0%, 0%, 0.2);
+  
+  --color1: hsl(0, 0%, 93%);
+
   }
 }

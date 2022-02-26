@@ -1,8 +1,8 @@
 section.home{
   min-height: 100vh;
-  background-color: var(--background-color1);
+  background-color: var(--surface1);
   text-align: center;
-  color: var(--text-color1);
+  color: var(--color1);
   padding-block: 15vh;
 
   header{
@@ -12,7 +12,6 @@ section.home{
   
   .intro{
     margin-top: 10vh;
-    color: var(--text-color1);
   
     &__name h1{
       font-family: 'Heebo';
@@ -33,6 +32,7 @@ section.home{
         border-radius: 50%;
         aspect-ratio: 1;
         margin-block: 5rem;
+        box-shadow: var(--box-shadow);
       }
     }
   }

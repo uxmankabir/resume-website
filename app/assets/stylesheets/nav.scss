@@ -3,10 +3,10 @@ nav{
   bottom: 5vh;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--background-color2);
-  padding: 8px 15px;
+  background-color: var(--surface2);
+  padding: 5px 10px;
   border-radius: 100px;
-  box-shadow:  0px 3px 15px -10px #1e2022;
+  box-shadow: var(--box-shadow);
   opacity: .7;
 
   ul{
@@ -21,8 +21,8 @@ nav{
         font-size: 20px;
       }
 
-      color: var(--text-color1);
-      background-color: var(--background-color1);
+      color: var(--color1);
+      background-color: var(--surface3);
       text-decoration: none;
       padding: 8px;
       border-radius: 100px;
