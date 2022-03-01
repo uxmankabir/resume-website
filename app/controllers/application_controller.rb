@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   private
 
   def monitor_website_visitors
-    Visitor.first_or_create!(ip_address: client_ip)
+    Visitor.find_or_create_by!(ip_address: client_ip)
     @visitors_count = Visitor.count
   end
 
