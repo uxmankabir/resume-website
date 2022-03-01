@@ -9,6 +9,9 @@ class ApplicationController < ActionController::Base
   end
 
   def client_ip
+    p '*'*80
+    p request.remote_ip
+    p '*'*80
     request.remote_ip
   end
 
