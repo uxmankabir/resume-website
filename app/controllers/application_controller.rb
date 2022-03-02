@@ -10,11 +10,11 @@ class ApplicationController < ActionController::Base
   end
 
   def client_ip
-    @ip_geolocation[:response_body]["ip_address"]
+    request.remote_ip
   end
 
   def ip_geolocation
-    @ip_geolocation ||= AbstractApi::IpGeolocation.new.call
+    @ip_geolocation ||= AbstractApi::IpGeolocation.new(client_ip).call
   end
 
 end
