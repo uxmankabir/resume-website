@@ -1,4 +1,5 @@
 class ApplicationController < ActionController::Base
+  before_action :ip_geolocation
   before_action :monitor_website_visitors
 
   private
@@ -9,7 +10,11 @@ class ApplicationController < ActionController::Base
   end
 
   def client_ip
-    request.remote_ip
+    @ip_geolocation[:response_body]["ip_address"]
+  end
+
+  def ip_geolocation
+    @ip_geolocation ||= AbstractApi::IpGeolocation.new.call
   end
 
 end

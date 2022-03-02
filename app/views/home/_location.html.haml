@@ -1,0 +1,10 @@
+- if @ip_geolocation[:response_code].eql?("200")
+  - response_body = @ip_geolocation[:response_body]
+  .location
+    %span.icon
+      %i.fa-solid.fa-location-crosshairs
+    %span.detail
+      .city
+        = "#{response_body["city"]}, #{response_body["region"]} #{response_body["postal_code"]}"
+      .country
+        = "#{response_body["country"]} #{response_body["flag"]["emoji"]}"
