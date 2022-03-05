@@ -1,4 +1,4 @@
-- if @ip_geolocation[:response_code].eql?("200")
+- if !Rails.env.development? && @ip_geolocation[:response_code].eql?("200")
   - response_body = @ip_geolocation[:response_body]
   .location
     %span.icon
