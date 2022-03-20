@@ -5,14 +5,14 @@ section.home{
   color: var(--color1);
   padding-block: 15vh;
 
-  header{
-    font-family: 'Major Mono Display';
-    font-size: 1.5rem;
-  }
-  
   .intro{
-    margin-top: 10vh;
-  
+
+    &__logo{
+      width: 2rem;
+      fill: var(--color1);
+      margin-bottom: 10vh;
+    }
+
     &__name h1{
       font-family: 'Heebo';
       font-size: 2rem;
