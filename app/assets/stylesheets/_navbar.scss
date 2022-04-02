@@ -1,0 +1,77 @@
+nav{
+  position: fixed;
+  inset: 0 0 auto 0;
+  background-color: var(--surface2);
+  height: 64px;
+}
+
+.list{
+  max-width: 450px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  gap: 5px;
+  &__item{
+    flex: 1;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    a{
+      width: 100%;
+      height: 100%;
+      padding-block-start: .8rem;
+      padding-block-end: .5rem;
+      color: var(--color1);
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      gap: .4rem;
+      opacity: .7;
+      transition: opacity .3s;
+      &:hover{
+        opacity: 1;
+      }
+    }
+    &-icon{
+      font-size: 1.2rem;
+    }
+    &-text{
+      text-transform: uppercase;
+      font-size: .6rem;
+      font-weight: 300;
+    }
+    &::after{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: var(--color1);
+      inset: auto 0 0 0;
+      opacity: 1;
+      transform: translateX(-100%);
+      transition: transform .5s;
+      z-index: 2;
+      pointer-events: none;
+    }
+    &:hover::after{
+      transform: translateX(0);
+    }
+    &::before{
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 2px;
+      background-color: var(--color1);
+      opacity: .2;
+      inset: auto 0 0 0;
+      pointer-events: none;
+      z-index: 1;
+    }
+  }
+}
