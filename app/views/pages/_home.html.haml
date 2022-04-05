@@ -1,27 +1,28 @@
-%section.intro#home
-  %svg.intro__logo{:viewbox => "0 0 853 495", :xmlns => "http://www.w3.org/2000/svg"}
-    %path{:d => "M 0 0 V315 C 0 555, 391 555, 391 315 V0 H365 V315 C 365 515, 26 515, 26 315 V0 Z M475 0 V486 H853 V465 L665 203 L647 221 L815 459 H503 V365 L853 16 V0 H475 Z"}
+%section#home
+  .container.intro
+    %svg.intro__logo{:viewbox => "0 0 853 495", :xmlns => "http://www.w3.org/2000/svg"}
+      %path{:d => "M 0 0 V315 C 0 555, 391 555, 391 315 V0 H365 V315 C 365 515, 26 515, 26 315 V0 Z M475 0 V486 H853 V465 L665 203 L647 221 L815 459 H503 V365 L853 16 V0 H475 Z"}
 
-  .intro__text
-    %small Hello, I'm
-    %h1 Usman Kabir
-    %small Full-Stack Developer
-    %title Ruby on Rails, Full-Stack Developer - Usman Kabir
-    %meta(name="description" content="I am a web developer, experienced in Ruby on Rails, HTML, CSS, Bootstrap, JavaScript and Tailwind")
+    .intro__text
+      %small Hello, I'm
+      %h1 Usman Kabir
+      %small Full-Stack Developer
+      %title Ruby on Rails, Full-Stack Developer - Usman Kabir
+      %meta(name="description" content="I am a web developer, experienced in Ruby on Rails, HTML, CSS, Bootstrap, JavaScript and Tailwind")
 
-  .intro__image
-    = image_tag 'thumbnail.jpg', alt: 'Avatar'
+    .intro__image
+      = image_tag 'thumbnail.jpg', alt: 'Avatar'
 
-  .social_links
-    = link_to "https://github.com/karamatuIIah", target: "_blank" do
-      %i.fa-brands.fa-github
-      uxmankabir
-    = link_to "https://codepen.io/uxmankabir/", target: "_blank" do
-      %i.fa-brands.fa-codepen
-      uxmankabir
-    = link_to "https://www.linkedin.com/in/uxmankabir/", target: "_blank" do
-      %i.fa-brands.fa-linkedin-in
-      uxmankabir
-    = link_to "https://www.facebook.com/uxmankabir/", target: "_blank" do
-      %i.fa-brands.fa-facebook
-      uxmankabir
+    .social_links
+      = link_to "https://github.com/karamatuIIah", target: "_blank" do
+        %i.fa-brands.fa-github
+        uxmankabir
+      = link_to "https://codepen.io/uxmankabir/", target: "_blank" do
+        %i.fa-brands.fa-codepen
+        uxmankabir
+      = link_to "https://www.linkedin.com/in/uxmankabir/", target: "_blank" do
+        %i.fa-brands.fa-linkedin-in
+        uxmankabir
+      = link_to "https://www.facebook.com/uxmankabir/", target: "_blank" do
+        %i.fa-brands.fa-facebook
+        uxmankabir

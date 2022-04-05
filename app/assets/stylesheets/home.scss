@@ -2,16 +2,17 @@
 .intro{
   text-align: center;
   color: var(--color1);
-  background-color: var(--surface1);
   &__logo{
     width: 2rem;
     fill: var(--color1);
-    margin-block-start: 20vh;
+    margin-block-start: 0;
     margin-block-end: 7vh;
   }
 
   &__text{
     font-family: 'Heebo';
+    margin-block-start: 0;
+    margin-block-end: 7vh;
     h1{
       font-size: 2rem;
       font-weight: 700;
@@ -24,26 +25,27 @@
   }
 
   &__image{
+    margin-block-start: 0;
+    margin-block-end: 7vh;
     img{
       object-fit: cover;
       width: calc(10rem + 5vw);
       border-radius: 50%;
       aspect-ratio: 1;
-      margin-block: 7vh;
-      box-shadow: var(--box-shadow);
+      box-shadow: var(--box-shadow1);
     }
   }
 
   .social_links{
-    max-width: 330px;
+    max-width: 350px;
+    display: flex;
+    flex-flow: row wrap;
     margin-inline: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: .6rem;
-    padding-inline: 1rem;
+    gap: 0.6rem;
     a{
       color: var(--color1);
       font-weight: 300;
+      flex: 1 1 150px;
       display: flex;
       justify-content: center;
       align-items: center;
