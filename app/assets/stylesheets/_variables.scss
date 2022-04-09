@@ -1,10 +1,10 @@
 :root{
 
+  --surface0: hsl(0deg 0% 92%);
   --surface1: hsl(0, 0%, 96%);
   --surface2: hsl(0, 0%, 100%);
   --surface3: hsla(0, 0%, 78%, 0.3);
   --surface4: hsla(0, 0%, 0%, 0.2);
-  --surface5: hsl(14, 100%, 70%);
 
   --color1: hsl(199, 18%, 33%);
 
@@ -12,7 +12,7 @@
   --box-shadow2: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
   @media (prefers-color-scheme: dark){
-
+  --surface0: hsl(200deg 20% 14%);
   --surface1: hsl(200, 19%, 18%);
   --surface2: hsl(200, 18%, 26%);
   --surface3: hsla(0, 0%, 20%, 0.3);

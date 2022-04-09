@@ -13,7 +13,7 @@
 	transform-origin: center;
 	transition: transform 10s ease-in-out;
 	pointer-events: none;
-	z-index: 1000;
+	z-index: 999;
 }
 
 body:hover .cursor {
@@ -26,5 +26,10 @@ body:hover .cursor {
 	}
 	100% {
 		transform: translate(var(--x), var(--y)) scale(2.5);
+	}
+}
+@media (max-width: 767.98px) {
+	body:hover .cursor{
+		animation: none;
 	}
 }

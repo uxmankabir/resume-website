@@ -3,15 +3,17 @@
 }
 
 html{
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-  height: 100vh;
+  overflow: hidden;
 }
 
 body{
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow: auto;
 }
 
 section{
@@ -26,11 +28,16 @@ section{
     flex: 1;
   }
 }
+@media (max-width: 767.98px) {
+  section{
+    scroll-snap-align: none;
+  }
+}
 
 section:nth-child(even){
   background-color: var(--surface1);
 }
 
 section:nth-child(odd){
-  background-color: var(--surface2);
+  background-color: var(--surface0);
 }

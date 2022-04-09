@@ -1,9 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 853 495" class="uk-svg">
   <style>
-    path { fill: hsl(199, 18%, 33%); }
-    @media (prefers-color-scheme: dark) {
-      path { fill: hsl(0, 0%, 93%); }
-    }
+    path { fill: hsl(204deg 87% 53%); }
   </style>
   <path d="M 0 0 V315 C 0 555, 391 555, 391 315 V0 H365 V315 C 365 515, 26 515, 26 315 V0 Z M475 0 V486 H853 V465 L665 203 L647 221 L815 459 H503 V365 L853 16 V0 H475 Z" />
 </svg>

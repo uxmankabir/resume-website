@@ -17,48 +17,17 @@
 		transition: background-color .3s ease-in-out;
 
 		h3{
-			font-size: 1rem;
-			margin-block: 0;
+			font-size: 1.2rem;
+      margin-block-start: 0;
+      margin-block-end: 0.4rem;
 		}
-    .degree{
-      display: flex;
-      align-items: center;
-      overflow: hidden;
-      span{
-        display: inline-block;
-        padding-inline: 1rem;
-        position: relative;
-        margin-inline: auto;
-        font-weight: 300;
-        font-size: .8rem;
-        text-transform: uppercase;
-        &::before{
-          position: absolute;
-          content: '';
-          width: 500%;
-          height: 1px;
-          background-color: var(--color1);
-          left: 0;
-          transform: translateX(-100%);
-          top: 50%;
-        }
-        &::after{
-          position: absolute;
-          content: '';
-          width: 500%;
-          height: 1px;
-          background-color: var(--color1);
-          right: 0;
-          transform: translateX(100%);
-          top: 50%;
-        }
-      }
+    .institute{
+      font-size: .8rem;
     }
 
 		p{
 			font-size: .9rem;
-			margin-block-start: .5rem;
-			margin-block-end: 0;
+      margin-block-end: 0;
 		}
 
 		.year{
@@ -79,11 +48,6 @@
       top: 0.74rem;
       z-index: 2;
 		}
-	}
-
-	&__content:hover{
-		background-color: var(--surface3);
-		border-radius: .25rem;
 	}
 
 	&__content:not(:last-child):before{
