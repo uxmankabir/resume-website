@@ -1,6 +1,7 @@
 nav{
   position: fixed;
-  inset: 0 0 calc(100vh - 64px) 0;
+  inset: 0 0 auto 0;
+  height: 64px;
   background-color: var(--surface2);
   z-index: 1000;
   box-shadow: var(--box-shadow2);
